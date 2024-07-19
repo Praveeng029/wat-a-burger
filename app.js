@@ -1,4 +1,41 @@
 
+window.addEventListener("wheel", function (dets) {
+  if (dets.deltaY > 0) {
+      gsap.to(".marque", {
+          transform: "translateX(-200%)",
+          duration: 4,
+          repeat: -1,
+          ease: "none"
+      })
+      
+  }else{
+      gsap.to(".marque", {
+          transform: "translateX(0)",
+          duration: 4,
+          repeat: -1,
+          ease: "none"
+      })
+  }
+})
+
+
+let animm = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".part-2-animm",
+    // markers: true,
+    start:"0% 70%",
+    end:"50% 50%",
+    scrub:true,
+  }
+})
+
+animm.to(".rounded-div-wrapper", {
+  height: 0,
+  marginTop: 0
+})
+
+
+
 //FOOTER SECTION
 function breakTheTexts() {
   let footerH11 = document.querySelector(".footer-anim h1")
@@ -414,5 +451,15 @@ Shery.imageEffect(".img", {
   style: 4,
   debug: true,
 });
+
+
+
+
+
+
+
+
+
+
 
 

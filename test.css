@@ -24,141 +24,49 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: beige;
 }
-
-/* review page */
-
-#review {
-    width: 100%;
-    height: 100vh;
-    /* background: #f5e5d5; */
-    position: relative;
-}
-
-#review>h1 {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 3vw;
-    font-weight: 700;
-    /* color: black; */
-    /* color: rgb(255, 89, 0); */
-    /* color: white; */
-    color: orangered;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    word-wrap: 6px;
-}
-
-.reviewcard {
+.main{
+    min-height: 100vh;
+    width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 30px;
-    border-radius: 20px;
-    gap: 40px;
-    overflow: hidden;
-    width: 70%;
-    height: 65%;
-    position: absolute;
-    background-color: orangered;
-    color: beige;
-    /* background-color: beige ; */
-    /* background-color: antiquewhite; */
-    /* background-color: cream; */
-    /* background-color: #E55A23; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-
-.reviewcard:nth-child(1) {
-    z-index: 9;
-}
-
-.reviewCardLeft img {
-    border-radius: 50px;
-    width: 20rem;
-    height: 24rem;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.reviewCardRight {
-    display: flex;
-    /* align-items: start; */
-    gap: 30px;
-    flex-direction: column;
-    /* color: whitesmoke; */
-    /* justify-content: start; */
-}
-.reviewCardRight img{
-    height: 1rem;
-    /* width: 100%; */
-}
-/* .reviewCardRight .quotesymbox {
-    font-size: 10vw;
-    height: 100px;
-    text-align: left;
-} */
-.reviewCardRight h3{
-    font-size: 100px;
-}
-.reviewCardRight h2 {
-    font-size: 30px;
-    text-align: start;
-    font-weight: 500;
-    font-family: c;
-}
-
-.reviewPersonName {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.reviewsButtons {
-    width: 200px;
-    height: 40px;
-    /* background-color: red; */
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.reviewBtnleft,
-.reviewBtnRight {
-    /* width: 60px; */
-    /* height: 60px; */
-    /* background: orange; */
-    /* box-shadow: 0 0 10px rgb(255, 255, 255); */
-    /* border-radius: 50%; */
-    /* display: flex; */
     /* align-items: center; */
-    /* justify-content: center; */
-    font-size: 2.5rem;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+    justify-content: center;
 }
+.card{
+    width: 50vw;
+    height: 100vh;
+    /* background-color: blue; */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
 
-/* .reviewBtnleft:hover,
-.reviewBtnRight:hover {
-    width: 150px;
-    border-radius: 34px;
-} */
-
-.reviewBtnleft img {
-    height: 40px;
-    rotate: 90deg;
 }
+.card img{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+.left{
+    min-height: 100vh;
+    background-color: red;
+    width: 50vw;
+    position: relative;
 
-.reviewBtnRight img {
-    height: 40px;
-    rotate: -90deg;
+}
+.left h1{
+    font-size: 5rem;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-140%,-40%);
+    z-index: 1;
+    font-weight: 700;
 }

@@ -1531,3 +1531,82 @@ video {
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+
+
+
+.part-2-animm{
+  width: 100%;
+  height: 100vh;
+  /* background-color: orange; */
+}
+
+.rounded-div-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+.rounded-div{
+  position: absolute;
+  left: 50%;
+  width: 150%;
+  height: 750%;
+  border-radius: 50%;
+  background-color: crimson;
+  background-color: antiquewhite;
+  transform: translate(-50%);
+}
+
+/* .page2{
+  height: 100vh;
+  width: 100%;
+} */
+.move{
+  background-color: lawngreen;
+  display: flex;
+  padding: 1vw 0;
+  overflow: hidden;
+}
+.marque{
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 1vw;
+  padding: 0 1.5vw;
+  transform: translateX(-100%);
+}
+.marque h1{
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+.marque img{
+  height: 2.8rem;
+  width: 6rem;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+@media (max-width:425px) {
+  .marque h1{
+      font-size: 2rem;
+  }
+  .marque img{
+      height: 2rem;
+      width: 4rem;
+  }
+}
+
+@media (max-width:320px) {
+  .marque h1{
+      font-size: 1.8rem;
+  }
+  .marque img{
+      height: 1.8rem;
+      width: 3.8rem;
+  }
+}
