@@ -1,4 +1,9 @@
 
+(function () {
+  var scroll = new LocomotiveScroll();
+})();
+
+
 //FOOTER SECTION
 function breakTheTexts() {
   let footerH11 = document.querySelector(".footer-anim h1")
@@ -129,43 +134,43 @@ let arr = [
     "h4": "The Most Delicious"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/icecream.jpg",
     "deg": "90",
     "h1": "Dessert",
     "h4": "Most Famous"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/plate burger.png",
     "deg": "135",
     "h1": "Burger",
     "h4": "Delightful and Savory"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/burger2.png",
     "deg": "180",
     "h1": "Burger",
     "h4": "Tasty Treat"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/coffe.png",
     "deg": "225",
     "h1": "Coffee",
     "h4": "Perfect Brew"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/icecream.jpg",
     "deg": "270",
     "h1": "Ice Cream",
     "h4": "Sweet Delight"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/palatable-chicken-with-spices.png",
     "deg": "315",
     "h1": "Chicken",
     "h4": "Spicy and Juicy"
   },
   {
-    "src": "images/BURGER.png",
+    "src": "images/burger 3.png",
     "deg": "360",
     "h1": "Burger",
     "h4": "Ultimate Flavor"
